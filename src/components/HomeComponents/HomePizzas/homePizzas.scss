@@ -1,0 +1,86 @@
+.pizzas_items{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    &_li{
+         display: flex;
+         flex-direction: column;
+         padding: 20px;
+         cursor: pointer;
+         transition: 0.3s;
+         overflow: hidden;
+       
+         img{
+            cursor: pointer;
+            transition: 0.5s;
+            display: flex;
+            overflow: hidden;
+
+         }
+        h2{
+            text-align: center;
+            font-weight: 600;
+            z-index: 800;
+
+            width: 210px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+        }
+        .desc_pizza{
+                width: 270px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                margin-bottom: 20px;
+        }
+        
+        .btns{
+            display: flex;
+            justify-content: first baseline;
+            align-items: center;
+            .pizza_price{
+                font-size: 20px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                margin: 0;
+            }
+            .btn_bron{
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                color:  #FE5F1E;
+                border: 1px solid #FE5F1E;
+                border-radius: 15px;
+                background-color: transparent;
+
+                &:active{
+                    transition: 0.3s;
+                    transform: scale(0.8);
+                    color: #e64607;
+                }
+
+                .anticon-plus-circle{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0px;
+                }
+            }
+        }
+        &:hover{
+            img{
+                transform: rotate(30deg);
+                transition: 0.3s;
+            }
+            
+            // border-left: 0.5px solid #ddd;
+            // border-right: 0.5px solid #ddd;
+        }
+    }
+
+}

@@ -1,0 +1,19 @@
+.pizzas-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 0px;
+}
+
+.ant-image-mask{
+    display: flex;
+    align-items: center;
+   font-size: 32px;
+   font-weight: 700;
+   background-color: transparent !important;
+   .ant-image-mask-info{
+    display: none;
+    // align-items: center;
+    // color: black;
+   }
+}

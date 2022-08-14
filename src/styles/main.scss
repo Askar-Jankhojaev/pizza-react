@@ -1,0 +1,55 @@
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+a,
+button,
+span {
+    display: inline-block;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+::-webkit-scrollbar{
+    background-color: #f5a585;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #b83400;;
+    border-radius: 30px;
+    width: 6px;
+}

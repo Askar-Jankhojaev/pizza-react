@@ -1,0 +1,58 @@
+.cart_inner{
+    height: 600px;
+    // background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_info{
+        height: 400px;
+        width: 750px;
+        // background-color: burlywood;
+
+        &_pustoy{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                font-size: 32px;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+            p{
+                color: #777777;
+                text-align: center;
+                width: 70%;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 18px;
+            }
+            img{
+                width: 300px;
+                margin-bottom: 30px;
+                filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .5));
+            }
+
+            .btn_pustoy{
+                border-radius: 30px !important;
+                background-color: black;
+                color: #fff;
+                border: none;
+                font-size: 16px;
+                font-weight: 600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 50px;
+                letter-spacing: 2px;
+                transition: 0.2s;
+
+                &:hover{
+                    background-color: #FE5F1E;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}
